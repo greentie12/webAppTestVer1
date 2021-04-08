@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+header {
+  background-color: #7a73af;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.5rem;
+}
+
+.leftHead {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rightHead {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+h1 span {
+  font-weight: 400;
+}
+
+.bellIcon {
+  width: 25px;
+  position: relative;
+}
+
+svg {
+  width: 100%;
+  fill: #fff;
+}
+
+.notify {
+  height: 6px;
+  width: 6px;
+  background-color: #8cc08c;
+  border-radius: 50%;
+  position: absolute;
+  top: -2px;
+  right: -2px;
+}
+
+.line {
+  display: inline;
+  border-right: 1px solid #929292;
+  height: 50px;
+  width: 2px;
+  margin: 0;
+  padding: 0;
+}
+
+.headerImg {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+#studentName {
+  font-size: 1rem;
+  font-weight: 300;
+}
