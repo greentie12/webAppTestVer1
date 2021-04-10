@@ -1,3 +1,15 @@
+let d = new Date();
+
+let dateDiv = document.querySelectorAll(".date");
+
+const insertDate = () => {
+  for (let x = 0; x < dateDiv.length; x++) {
+    dateDiv[x].innerHTML = d.toLocaleDateString();
+  }
+};
+
+insertDate();
+
 const data = {
   labels: ["Desktop", "Tablet", "Phones"],
   datasets: [

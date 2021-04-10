@@ -3,6 +3,8 @@
 * {
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 img {
@@ -161,7 +163,7 @@ svg {
   margin-top: 2rem;
 }
 
-.traffic-header h3 {
+.section-header h3 {
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -186,4 +188,57 @@ svg {
   color: #fff;
   padding: 0.5rem;
   border-radius: 20px;
+}
+
+.item-section {
+  border-bottom: 1px solid #bebebe;
+  padding: 1.5rem 0;
+}
+
+.social-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  background-color: #f0f0f0;
+  height: 150px;
+  padding: 1rem;
+  border: 1px solid #bebebe;
+  border-radius: 5px;
+  margin-bottom: 1.5rem;
+}
+
+.social-container .social-svg {
+  display: flex;
+  height: 100px;
+  width: 100px;
+  background-color: #766faf;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.social-container .social-svg svg {
+  fill: #fff;
+  width: 50px;
+}
+
+.social-info p {
+  font-size: 1.7rem;
+  color: #766faf;
+}
+
+.social-info p:nth-child(2) {
+  font-size: 3.5rem;
+  color: #6d6d6d;
+  font-weight: 300;
+}
+
+.member-container {
+  text-align: center;
+}
+
+.member-image {
+  width: 100px;
+  border-radius: 50%;
 }
