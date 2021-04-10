@@ -1,14 +1,33 @@
-let d = new Date();
-
-let dateDiv = document.querySelectorAll(".date");
-
+const currentDate = new Date();
+const dateDiv = document.querySelectorAll(".date");
 const insertDate = () => {
-  for (let x = 0; x < dateDiv.length; x++) {
-    dateDiv[x].innerHTML = d.toLocaleDateString();
-  }
+  // for (let x = 0; x < dateDiv.length; x++) {
+  //   dateDiv[x].innerHTML = currentDate.toLocaleDateString();
+  // }
+  dateDiv.forEach((date) => {
+    date.innerHTML = currentDate.toLocaleDateString();
+  });
 };
 
 insertDate();
+
+const timeDiv = document.querySelectorAll(".activity-time");
+
+const insertRandomTime = () => {
+  timeDiv.forEach((time) => {
+    const random = Math.floor(Math.random() * 30);
+
+    if (random < 24) {
+      time.innerHTML = `
+        ${random} hours ago
+      `;
+    } else {
+      time.innerHTML = "1 day ago";
+    }
+  });
+};
+
+insertRandomTime();
 
 const data = {
   labels: ["Desktop", "Tablet", "Phones"],

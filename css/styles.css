@@ -361,14 +361,24 @@ img {
 
 a {
   display: inline;
+  text-decoration: none;
+  color: #766faf;
 }
 
 li {
   list-style: none;
 }
 
+p {
+  line-height: 1.5;
+}
+
 .container {
   padding: 0 1rem;
+}
+
+.bold {
+  font-weight: 500;
 }
 
 #main-header {
@@ -470,12 +480,18 @@ svg {
 #dashboard {
   display: grid;
   grid-template-columns: 1fr 2fr;
+  align-items: center;
   padding-left: 2rem;
+}
+
+#dashboard h2 {
+  font-weight: 500;
 }
 
 #dash {
   background-color: #f0f0f0;
   border: 1px solid #bebebe;
+  padding: 1rem 0;
   border-right: none;
   border-top: none;
 }
@@ -512,9 +528,11 @@ svg {
 }
 
 .section-header h3 {
+  font-size: 1.3rem;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 1px;
+  line-height: 2;
 }
 
 .traffic-ul {
@@ -582,6 +600,12 @@ svg {
   font-weight: 300;
 }
 
+#new-members,
+#recent-activity {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
 .member-container {
   text-align: center;
 }
@@ -589,6 +613,63 @@ svg {
 .member-image {
   width: 100px;
   border-radius: 50%;
+}
+
+.member-info {
+  margin-bottom: 0.5rem;
+}
+
+#message-user {
+  width: 90%;
+  margin: auto;
+}
+
+#message-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+#userInput,
+#message-area,
+.form-button {
+  width: 100%;
+}
+
+#userInput,
+#message-area {
+  font-size: 1.3rem;
+  background-color: #f0f0f0;
+  border: 1px solid #bebebe;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+#userInput:focus,
+#message-area:focus {
+  outline: none;
+  border: 2px solid #818181;
+}
+
+#userInput {
+  height: 4rem;
+}
+
+#message-area {
+  height: 12rem;
+}
+
+#form-button {
+  background-color: #766faf;
+  color: #fff;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 1px solid #bebebe;
+  padding: 1rem;
+  border-radius: 5px;
 }
 
 /* ========================= */
