@@ -6,28 +6,44 @@
 }
 
 img {
+  display: inline;
   width: 100%;
 }
+a {
+  display: inline;
+}
 
-header {
-  background-color: #7a73af;
+li {
+  list-style: none;
+}
+
+.container {
+  padding: 0 1rem;
+}
+
+#main-header {
+  background-color: #766faf;
   color: #fff;
-  display: flex;
+  display: grid;
+  grid-template-columns: 3fr 1fr 3fr;
+  grid-template-rows: 1fr;
   justify-content: space-between;
   align-items: center;
+
   gap: 0.6rem;
   padding: 0.5rem;
+  height: 80px;
 }
 
 .leftHead {
-  width: 50%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .rightHead {
-  width: 50%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -44,17 +60,18 @@ h1 span {
 .bellIcon {
   width: 25px;
   position: relative;
+  cursor: pointer;
 }
 
 svg {
-  width: 100%;
   fill: #fff;
 }
 
 .notify {
   height: 6px;
   width: 6px;
-  background-color: #8cc08c;
+  color: #53be53;
+  background-color: #7de97d;
   border-radius: 50%;
   position: absolute;
   top: -2px;
@@ -68,6 +85,8 @@ svg {
   width: 2px;
   margin: 0;
   padding: 0;
+  position: relative;
+  left: 50%;
 }
 
 .headerImg {
@@ -79,4 +98,92 @@ svg {
 #studentName {
   font-size: 1rem;
   font-weight: 300;
+}
+
+#main-nav {
+  background-color: #4b4672;
+  height: 60px;
+  padding: 0 3rem;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(40px, 60px));
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+#main-nav a {
+  width: 35px;
+  justify-self: center;
+  cursor: pointer;
+}
+
+#dashboard {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding-left: 2rem;
+}
+
+#dash {
+  background-color: #f0f0f0;
+  border: 1px solid #bebebe;
+  border-right: none;
+  border-top: none;
+}
+
+#alert {
+  background-color: #766faf;
+  color: #fff;
+  border-radius: 5px;
+  margin: 1.5rem auto;
+  padding: 0 1rem;
+}
+
+#alert-message {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#alert-message p {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+#alert-message span {
+  font-weight: 500;
+}
+
+#alert-message i {
+  cursor: pointer;
+}
+
+#traffic {
+  margin-top: 2rem;
+}
+
+.traffic-header h3 {
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.traffic-ul {
+  display: flex;
+  padding-left: 0.5rem;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+}
+
+.traffic-li {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.traffic-li.highlight {
+  background-color: #70b470;
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 20px;
 }
